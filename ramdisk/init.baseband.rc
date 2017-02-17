@@ -4,8 +4,8 @@ on init
     restorecon /dev/mbin0
     symlink  /sys/devices/platform/s5p-ehci/ehci_power /dev/ehci_power
 
-    write /sys/module/link_pm_hsic_xmm626x/parameters/l2_delay 1000
-    write /sys/module/link_pm_hsic_xmm626x/parameters/hub_delay 100
+    write /sys/module/link_pm_hsic_xmm626x/parameters/l2_delay 50
+    write /sys/module/link_pm_hsic_xmm626x/parameters/hub_delay 50
     write /sys/module/modem_link_device_hsic_ncm/parameters/tx_qlen 5
 
 on fs
